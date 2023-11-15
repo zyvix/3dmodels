@@ -11,6 +11,7 @@ import { TagComponent } from './components/partials/tag/tag.component';
 import { RouterModule } from '@angular/router';
 import { FoodPageComponent } from './components/pages/food-page/food-page.component';
 import { TitleComponent } from './components/partials/title/title.component';
+import { NotFoundComponent } from './components/partials/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TitleComponent } from './components/partials/title/title.component';
     TagComponent,
     RouterModule,
     FoodPageComponent,
-    TitleComponent
+    TitleComponent,
+    NotFoundComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

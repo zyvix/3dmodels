@@ -5,13 +5,14 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { FoodService } from 'src/app/services/food.service';
 import { StarRatingComponent } from "../../partials/star-rating/star-rating.component";
 import { CartService } from 'src/app/services/cart.service';
+import { NotFoundComponent } from '../../partials/not-found/not-found.component';
 
 @Component({
     selector: 'app-food-page',
     standalone: true,
     templateUrl: './food-page.component.html',
     styleUrl: './food-page.component.css',
-    imports: [CommonModule, StarRatingComponent, NgFor, RouterLink]
+    imports: [CommonModule, StarRatingComponent, NgFor, RouterLink, NotFoundComponent]
 })
 export class FoodPageComponent {
 food!: Food;
